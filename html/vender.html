@@ -54,12 +54,12 @@
   <!-- Cuerpo-->
 
   <div class="mt-3 container centrao3">
-    
+
     <h2>Vender mi auto</h2>
     <form class="w-50">
       <div class="mb-3 ">
         <label for="exampleInputEmail1" class="form-label">Marca</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
       <div class="mb-3 ">
         <label for="exampleInputEmail1" class="form-label">Modelo</label>
@@ -67,25 +67,54 @@
       </div>
       <div class="mb-3 ">
         <label for="exampleInputEmail1" class="form-label">Año</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3 ">
+        <label for="exampleInputEmail1" class="form-label">Precio</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-        <span id="passwordHelpInline" class="form-text">
-          Debe tener entre 8 y 20 caracteres.
-        </span>
+        <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-      <div class="mb-5 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Aceptar términos y condiciones</label>
+      <label for="exampleFormControlTextarea1" class="form-label">Cargar imágenes</label>
+      <div class="input-group">
+        
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Cargar imagen</button>
       </div>
 
     </form>
 
-    <a type="submit" class="btn btn-rojo" href="catalogo2.html">Registrarme</a>
+      <!--MODAL-->
+      <!-- Button to Open the Modal -->
+      <a type="button" class="btn btn-rojo" data-bs-toggle="modal" data-bs-target="#aviso">Publicar mi vehículo</a>
 
-    <p>Si ya tienes una cuenta, <a href="inicio_sesion.html">inicia sesión aquí</a></p>
+      <!-- The Modal -->
+      <div class="modal" id="aviso">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Aviso importante</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Su vehículo se ha publicado en la página satisfactoriamente.
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <a type="button" class="btn btn-rojo" href="catalogo2.html">Volver al Inicio</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
 
   </div>
 
